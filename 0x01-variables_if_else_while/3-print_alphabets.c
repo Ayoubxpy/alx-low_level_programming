@@ -9,11 +9,17 @@
 int main(void)
 {
 	int number = 97;
+	int numberU = 65;
 
 	while (number <= 122)
 	{
 		putchar(number);
 		number++;
+	}
+	while (numberU <= 90)
+	{
+		putchar(numberU);
+		numberU++;
 	}
 	putchar ('\n');
 	return (0);
