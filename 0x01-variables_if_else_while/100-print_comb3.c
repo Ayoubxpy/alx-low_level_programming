@@ -2,32 +2,30 @@
 
 /**
  * main - main entry point
- * Description:
+ * Description:prints all possible different combinations of two digits.
  * Return:0(success)
 */
 
 int main(void)
 {
-	int num1 = 0, num2;
+	int num1, num2;
 
-	while (num1 <= 9)
+	for (num1 = 0; num1 <= 8; num1++)
 	{
-		while (num2 <= 9)
+		for (num2 = num1 + 1; num2 <= 9; num2++)
 		{
 			if (num1 != num2 || num1 < num2)
 			{
-				putchar(num1 + 48);
-				putchar(num2 + 48);
+				putchar(num1 + '0');
+				putchar(num2 + '0');
 
-				if (num1 + num2 != 17)
+				if (num1 != 8 || num2 != 9)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			num2++;
 		}
-		num1++;
 	}
 	putchar('\n');
 	return (0);
