@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(number);
 	}
-	for (alp = 97; alp <= 100; alp++)
+	for (alp = 97; alp <= 102; alp++)
 	{
 		putchar(alp);
 	}
