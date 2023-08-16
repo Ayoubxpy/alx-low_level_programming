@@ -6,7 +6,7 @@
  * Return:0 for letters 1 for the rest
 */
 
-int print_sign(int n);
+int print_sign(int n)
 {
 	int n;
 
