@@ -4,6 +4,7 @@
  * print_square - Prints a square on the terminal.
  * @size: The size of the square.
  */
+
 void print_square(int size)
 {
 	int row, column;
